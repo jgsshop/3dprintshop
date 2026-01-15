@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J & G's 3D Printing Shop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .product h3 {
+      margin-bottom: 10px;
+    }
+
+    .buy {
+      margin-top: 15px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00f5d4;
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .buy:hover {
+      background: #06d6a0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    .contact span {
+      display: block;
+      margin-top: 8px;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>J & G's 3D Printing Shop</h1>
+    <p>Chill • Modern • Custom 3D Printed Products</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>About Us</h2>
+      <p>
+        We’re a small team creating clean, high-quality 3D printed products.
+        From desk accessories to custom prints, everything is made with care and a modern vibe.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Products</h2>
+      <div class="products">
+        <!-- PRODUCT START -->
+        <div class="product">
+          <!-- Change image src to your own product image -->
+          <img src="https://via.placeholder.com/300x200?text=Product+Image" alt="Custom Keychain" style="width:100%;border-radius:12px;margin-bottom:12px">
+          <!-- Edit product name -->
+          <h3>Custom Keychains</h3>
+          <!-- Edit product description -->
+          <p>Durable, lightweight, and personalized designs.</p>
+          <!-- Edit price -->
+          <strong>$5.00</strong>
+          <!-- Cash App Buy Button -->
+          <!-- Color Picker -->
+          <label style="display:block;margin:10px 0 5px">Choose Color:</label>
+          <select style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:10px">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Custom (describe in order form)</option>
+          </select>
+          <a class="buy" href="https://cash.app/$jandgs3dprinting" target="_blank">Buy with Cash App</a>
+        </div>
+        <!-- PRODUCT END -->
+
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Product+Image" alt="Desk Accessories" style="width:100%;border-radius:12px;margin-bottom:12px">
+          <h3>Desk Accessories</h3>
+          <p>Stands, holders, and organizers with a clean look.</p>
+          <strong>$10.00</strong>
+          <!-- Color Picker -->
+          <label style="display:block;margin:10px 0 5px">Choose Color:</label>
+          <select style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:10px">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Custom (describe in order form)</option>
+          </select>
+          <a class="buy" href="https://cash.app/$jandgs3dprinting" target="_blank">Buy with Cash App</a>
+        </div>
+
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200?text=Product+Image" alt="Custom Prints" style="width:100%;border-radius:12px;margin-bottom:12px">
+          <h3>Custom Prints</h3>
+          <p>Got an idea? We can print it for you.</p>
+          <strong>Starting at $15.00</strong>
+          <!-- Color Picker -->
+          <label style="display:block;margin:10px 0 5px">Choose Color:</label>
+          <select style="width:100%;padding:10px;border-radius:10px;border:none;margin-bottom:10px">
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Custom (describe in order form)</option>
+          </select>
+          <a class="buy" href="https://cash.app/$jandgs3dprinting" target="_blank">Buy with Cash App</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="card contact">
+      <h2>Checkout & Orders</h2>
+      <p>Click any product to pay using Cash App. After payment, email us your order details.</p>
+      <span>Email: jandgs3dprinting@gmail.com</span>
+      <span>Cash App: $jandgs3dprinting</span>
+      <form style="margin-top:20px">
+        <input type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:10px;border-radius:10px;border:none">
+        <input type="email" placeholder="Your Email" required style="width:100%;padding:10px;margin-bottom:10px;border-radius:10px;border:none">
+        <textarea placeholder="What product did you buy? Color? Size?" required style="width:100%;padding:10px;border-radius:10px;border:none"></textarea>
+        <button type="submit" class="buy" style="margin-top:10px;border:none;cursor:pointer">Submit Order Info</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 J & G's 3D Printing Shop • Made with 💙
+  </footer>
+
+</body>
+</html>
